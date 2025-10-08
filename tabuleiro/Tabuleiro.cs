@@ -1,0 +1,17 @@
+﻿namespace tabuleiro
+{
+    class Tabuleiro
+    {
+        public int llinhas { get; set; }
+        public int colunas { get; set; }
+        private Peca[,] pecas;
+
+        public Tabuleiro(int linhas, int colunas)
+        {
+            this.llinhas = linhas;
+            this.colunas = colunas;
+            pecas = new Peca[linhas, colunas];
+        }
+
+    }
+}
